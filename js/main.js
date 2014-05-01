@@ -7,6 +7,14 @@ app.controller('BoxmodelCtrl', function($scope){
         paddingTop: 20,
         paddingRight: 20,
         paddingBottom: 20,
-        paddingLeft: 20
+        paddingLeft: 20,
+        borderTop: 20,
+        borderRight: 20,
+        borderBottom: 20,
+        borderLeft: 20,
+        marginTop: 20,
+        marginRight: 20,
+        marginBottom: 20,
+        marginLeft: 20
     };
 });

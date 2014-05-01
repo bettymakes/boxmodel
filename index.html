@@ -19,11 +19,11 @@
                 <div>Element Settings</div>
                 <div>
                     <label>Width</label>
-                    <input ng-model="elementWidth"/>
+                    <input type="number" ng-model="prop.elementWidth"/>
                 </div>
                 <div>
                     <label>Height</label>
-                    <input ng-model="elementHeight">
+                    <input type="number" ng-model="prop.elementHeight">
                 </div>
             </div>
 
@@ -32,19 +32,19 @@
                 <div>Padding Settings</div>
                 <div>
                     <label>Top</label>
-                    <input ng-model="paddingTop"/>
+                    <input type="number" ng-model="prop.paddingTop"/>
                 </div>
                 <div>
                     <label>Right</label>
-                    <input ng-model="paddingRight">
+                    <input type="number" ng-model="prop.paddingRight">
                 </div>
                 <div>
                     <label>Bottom</label>
-                    <input ng-model="paddingBottom">
+                    <input type="number" ng-model="prop.paddingBottom">
                 </div>
                 <div>
                     <label>Left</label>
-                    <input ng-model="paddingLeft">
+                    <input type="number" ng-model="prop.paddingLeft">
                 </div>
             </div>
 
@@ -53,19 +53,19 @@
                 <div>Border Settings</div>
                 <div>
                     <label>Top</label>
-                    <input ng-model="borderTop"/>
+                    <input type="number" ng-model="prop.borderTop"/>
                 </div>
                 <div>
                     <label>Right</label>
-                    <input ng-model="borderRight">
+                    <input type="number" ng-model="prop.borderRight">
                 </div>
                 <div>
                     <label>Bottom</label>
-                    <input ng-model="borderBottom">
+                    <input type="number" ng-model="prop.borderBottom">
                 </div>
                 <div>
                     <label>Left</label>
-                    <input ng-model="borderLeft">
+                    <input type="number" ng-model="prop.borderLeft">
                 </div>
             </div>
 
@@ -74,19 +74,19 @@
                 <div>Margin Settings</div>
                 <div>
                     <label>Top</label>
-                    <input ng-model="marginTop"/>
+                    <input type="number" ng-model="prop.marginTop"/>
                 </div>
                 <div>
                     <label>Right</label>
-                    <input ng-model="marginRight">
+                    <input type="number" ng-model="prop.marginRight">
                 </div>
                 <div>
                     <label>Bottom</label>
-                    <input ng-model="marginBottom">
+                    <input type="number" ng-model="prop.marginBottom">
                 </div>
                 <div>
                     <label>Left</label>
-                    <input ng-model="marginLeft">
+                    <input type="number" ng-model="prop.marginLeft">
                 </div>
             </div>
         </aside>
@@ -97,25 +97,25 @@
                         <div class="bm-border">
                             <div class="bm-padding"
                                 ng-style="
-                                {'padding-top' : paddingTop + 'px',
-                                'padding-right' : paddingRight + 'px',
-                                'padding-bottom' : paddingBottom + 'px',
-                                'padding-left' : paddingLeft + 'px'}">
+                                {'padding-top' : prop.paddingTop + 'px',
+                                'padding-right' : prop.paddingRight + 'px',
+                                'padding-bottom' : prop.paddingBottom + 'px',
+                                'padding-left' : prop.paddingLeft + 'px'}">
 
                                 <div class="bm-element"
                                     ng-style="
-                                        {'width' : elementWidth + 'px',
-                                        'height' : elementHeight + 'px'}">
+                                        {'width' : prop.elementWidth + 'px',
+                                        'height' : prop.elementHeight + 'px'}">
                                     Element:
-                                    {{ elementWidth ? elementWidth + 'px' : "400px"}}
+                                    {{ prop.elementWidth ? prop.elementWidth + 'px' : "400px"}}
                                     x
-                                    {{elementHeight ? elementHeight + 'px' : "200px"}}
+                                    {{ prop.elementHeight ? prop.elementHeight + 'px' : "200px"}}
                                     <br>
                                     Padding:
-                                    Top: {{ paddingTop ? paddingTop + 'px' : "20px"}},
-                                    Right: {{ paddingRight ? paddingRight + 'px' : "20px"}},
-                                    Bottom: {{ paddingBottom ? paddingBottom + 'px' : "20px"}},
-                                    Left: {{ paddingLeft ? paddingLeft + 'px' : "20px"}}
+                                    Top: {{ prop.paddingTop ? prop.paddingTop + 'px' : "20px"}},
+                                    Right: {{ prop.paddingRight ? prop.paddingRight + 'px' : "20px"}},
+                                    Bottom: {{ prop.paddingBottom ? prop.paddingBottom + 'px' : "20px"}},
+                                    Left: {{ prop.paddingLeft ? prop.paddingLeft + 'px' : "20px"}}
                                 </div>
                             </div>
                         </div>

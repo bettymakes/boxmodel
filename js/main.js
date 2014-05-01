@@ -35,4 +35,12 @@ app.controller('BoxmodelCtrl', function($scope){
             marginLeft: 20
         };
     };
+
+    $scope.popUp = {state: false};
+
+    $scope.toggleState = function(obj){
+        console.log('before', obj.state);
+        obj.state = !obj.state;
+        console.log('fired!', obj.state);
+    };
 });

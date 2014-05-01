@@ -140,5 +140,43 @@ html, body{
     background-color: #B3C6D4;
 }
 
+/*Pop up*/
+.pop-up{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    /*border-bottom-left-radius: 5px;*/
+    background-color: #000000;
+    color: #EB974E;
+    transition: all 0.5s ease;
+}
+
+.pop-up:hover{
+    cursor: pointer;
+}
+
+.pop-up i{
+    font-size: 16px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+.pop-up.slide-out{
+    right: 300px;
+}
+
+.bm-info{
+    position: absolute;
+    left: 40px;
+    top: 0;
+    height: 400px;
+    width: 300px;
+    background-color: #000;
+    color: #fff;
+}
+
+
 
 

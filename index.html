@@ -16,6 +16,7 @@
                 </h1>
             </div>
             <div>
+                <button class="btn btn-success btn-sm" ng-click="setDefault()">Reset</button>
                 <div>Element Settings</div>
                 <div>
                     <label>Width</label>
@@ -93,8 +94,18 @@
         <div class="main-container">
             <div class="main-body">
                 <div class="bm-container">
-                    <div class="bm-margin">
-                        <div class="bm-border">
+                    <div class="bm-margin"
+                        ng-style="
+                                {'padding-top' : prop.marginTop + 'px',
+                                'padding-right' : prop.marginRight + 'px',
+                                'padding-bottom' : prop.marginBottom + 'px',
+                                'padding-left' : prop.marginLeft + 'px'}">
+                        <div class="bm-border"
+                            ng-style="
+                                    {'padding-top' : prop.borderTop + 'px',
+                                    'padding-right' : prop.borderRight + 'px',
+                                    'padding-bottom' : prop.borderBottom + 'px',
+                                    'padding-left' : prop.borderLeft + 'px'}">
                             <div class="bm-padding"
                                 ng-style="
                                 {'padding-top' : prop.paddingTop + 'px',

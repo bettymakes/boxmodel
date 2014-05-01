@@ -90,13 +90,33 @@
                 </div>
             </div>
         </aside>
-        <div class="main-body">
-            <div class="main-wrap">
-                <div class="bm-margin">
-                    <div class="bm-border">
-                        <div class="bm-padding">
-                            <div class="bm-element" ng-style="{'width' : elementWidth + 'px', 'height' : elementHeight + 'px'}">
-                                {{ elementWidth ? elementWidth + 'px' : "400px"}} x {{elementHeight ? elementHeight + 'px' : "200px"}}
+        <div class="main-container">
+            <div class="main-body">
+                <div class="bm-container">
+                    <div class="bm-margin">
+                        <div class="bm-border">
+                            <div class="bm-padding"
+                                ng-style="
+                                {'padding-top' : paddingTop + 'px',
+                                'padding-right' : paddingRight + 'px',
+                                'padding-bottom' : paddingBottom + 'px',
+                                'padding-left' : paddingLeft + 'px'}">
+
+                                <div class="bm-element"
+                                    ng-style="
+                                        {'width' : elementWidth + 'px',
+                                        'height' : elementHeight + 'px'}">
+                                    Element:
+                                    {{ elementWidth ? elementWidth + 'px' : "400px"}}
+                                    x
+                                    {{elementHeight ? elementHeight + 'px' : "200px"}}
+                                    <br>
+                                    Padding:
+                                    Top: {{ paddingTop ? paddingTop + 'px' : "20px"}},
+                                    Right: {{ paddingRight ? paddingRight + 'px' : "20px"}},
+                                    Bottom: {{ paddingBottom ? paddingBottom + 'px' : "20px"}},
+                                    Left: {{ paddingLeft ? paddingLeft + 'px' : "20px"}}
+                                </div>
                             </div>
                         </div>
                     </div>

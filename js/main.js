@@ -1,4 +1,4 @@
-var app = angular.module('boxmodelApp', []);
+var app = angular.module('boxmodelApp', ['ui.bootstrap']);
 
 app.controller('BoxmodelCtrl', function($scope){
     $scope.prop = {

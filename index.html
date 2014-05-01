@@ -3,12 +3,110 @@
     <head>
         <title>Box Model Learnings</title>
         <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
     </head>
     <body ng-controller="BoxmodelCtrl">
-        <h1>hello world!</h1>
-        <h2>{{ testing }}</h2>
+        <aside class="sidebar">
+            <div class="logo-bar">
+                <h1>
+                    <i class="fa fa-rocket"></i>
+                    Box Model Playground
+                </h1>
+            </div>
+            <div>
+                <div>Element Settings</div>
+                <div>
+                    <label>Width</label>
+                    <input ng-model="elementWidth"/>
+                </div>
+                <div>
+                    <label>Height</label>
+                    <input ng-model="elementHeight">
+                </div>
+            </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+            <!-- Padding -->
+            <div>
+                <div>Padding Settings</div>
+                <div>
+                    <label>Top</label>
+                    <input ng-model="paddingTop"/>
+                </div>
+                <div>
+                    <label>Right</label>
+                    <input ng-model="paddingRight">
+                </div>
+                <div>
+                    <label>Bottom</label>
+                    <input ng-model="paddingBottom">
+                </div>
+                <div>
+                    <label>Left</label>
+                    <input ng-model="paddingLeft">
+                </div>
+            </div>
+
+            <!-- Border -->
+            <div>
+                <div>Border Settings</div>
+                <div>
+                    <label>Top</label>
+                    <input ng-model="borderTop"/>
+                </div>
+                <div>
+                    <label>Right</label>
+                    <input ng-model="borderRight">
+                </div>
+                <div>
+                    <label>Bottom</label>
+                    <input ng-model="borderBottom">
+                </div>
+                <div>
+                    <label>Left</label>
+                    <input ng-model="borderLeft">
+                </div>
+            </div>
+
+            <!-- Margin -->
+            <div>
+                <div>Margin Settings</div>
+                <div>
+                    <label>Top</label>
+                    <input ng-model="marginTop"/>
+                </div>
+                <div>
+                    <label>Right</label>
+                    <input ng-model="marginRight">
+                </div>
+                <div>
+                    <label>Bottom</label>
+                    <input ng-model="marginBottom">
+                </div>
+                <div>
+                    <label>Left</label>
+                    <input ng-model="marginLeft">
+                </div>
+            </div>
+        </aside>
+        <div class="main-body">
+            <div class="main-wrap">
+                <div class="bm-margin">
+                    <div class="bm-border">
+                        <div class="bm-padding">
+                            <div class="bm-element" ng-style="{'width' : elementWidth + 'px', 'height' : elementHeight + 'px'}">
+                                {{ elementWidth ? elementWidth + 'px' : "400px"}} x {{elementHeight ? elementHeight + 'px' : "200px"}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+        <script type="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>

@@ -8,22 +8,20 @@
         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
     </head>
     <body ng-controller="BoxmodelCtrl">
+        <div class="logo-bar">
+            <h1>
+                <i class="fa fa-rocket"></i>
+                Box Model Playground
+            </h1>
+        </div>
         <aside class="sidebar">
-            <div class="logo-bar">
-                <h1>
-                    <i class="fa fa-rocket"></i>
-                    Box Model Playground
-                </h1>
-            </div>
-            <div>
-
             <!-- Element -->
             <div class="container-fluid">
                 <div class="btn-bar clearfix">
                     <button class="btn btn-success btn-sm pull-right" ng-click="setDefault()">Reset</button>
                 </div>
                 <div class="form-horizontal">
-                    <div class="setting-title">Element Settings</div>
+                    <div class="highlight-block element-highlight setting-title">Element Settings</div>
                     <div class="form-group">
                         <label class="col-sm-3 control-label">Width</label>
                         <div class="col-sm-8">
@@ -40,7 +38,7 @@
 
                 <!-- Padding -->
                 <div class="form-horizontal">
-                    <div class="setting-title">Padding Settings</div>
+                    <div class="highlight-block padding-highlight setting-title">Padding Settings</div>
                     <div class="form-group">
                         <label class="col-sm-3 control-label">Top</label>
                         <div class="col-sm-8">
@@ -69,10 +67,7 @@
 
                 <!-- Border -->
                 <div class="form-horizontal">
-                    <div class="setting-title">
-                        <div class="border-higlight"></div>
-                        Border Settings
-                    </div>
+                    <div class="highlight-block border-highlight setting-title">Border Settings</div>
                     <div class="form-group">
                         <label class="col-sm-3 control-label">Top</label>
                         <div class="col-sm-8">
@@ -101,7 +96,7 @@
 
                 <!-- Margin -->
                 <div class="form-horizontal">
-                    <div class="setting-title">Margin Settings</div>
+                    <div class="highlight-block margin-highlight setting-title">Margin Settings</div>
                     <div class="form-group">
                         <label class="col-sm-3 control-label">Top</label>
                         <div class="col-sm-8">
@@ -127,7 +122,7 @@
                         </div>
                     </div>
                 </div>
-            </aside>
+        </aside>
             <div class="main-container">
                 <div class="main-body">
                     <div class="bm-container">

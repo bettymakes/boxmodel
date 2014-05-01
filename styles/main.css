@@ -9,11 +9,16 @@ html, body{
 
 .sidebar{
     position: fixed;
-    top: 0;
+    top: 75px;
     bottom: 0;
     left: 0;
     width: 400px;
     background-color: #ccc;
+    overflow: hidden;
+}
+
+.sidebar:hover{
+    overflow: auto;
 }
 
 .sidebar .form-group{
@@ -36,7 +41,12 @@ html, body{
 }
 
 .logo-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
     height: 75px;
+    z-index: 10;
     background-color: #000;
 }
 
@@ -53,25 +63,37 @@ html, body{
     margin-right: 5px;
 }
 
+.settings-container{
+    overflow: hidden;
+}
+
+.settings-container:hover{
+    overflow: auto;
+}
+
 .settings-block{
     padding: 10px 0;
     border-bottom: 1px solid #333;
 }
 
 .element-highlight{
-    background-color: #FFFFFF;
+    border-left: 25px solid #FFFFFF;
 }
 
 .padding-highlight{
-    background-color: #FFECD4;
+    border-left: 25px solid #FFECD4;
 }
 
 .border-highlight{
-    background-color: #B8DEC7;
+    border-left: 25px solid #B8DEC7;
 }
 
 .margin-highlight{
-    background-color: #B3C6D4;
+    border-left: 25px solid #B3C6D4;
+}
+
+.highlight-block{
+    padding-left: 15px;
 }
 
 /*Main body styles*/

@@ -205,6 +205,11 @@ html, body{
 
 .bm-info-body{
     padding: 15px;
+    color: #000;
+}
+
+.bm-list ul{
+    list-style: none;
 }
 
 

@@ -181,14 +181,19 @@
                     <button type="button" class="btn btn-default btn-sm" ng-model="boxSizingModel" btn-radio="true" ng-class="{'btn-success' : boxSizingModel}">Box Sizing On</button>
                     <button type="button" class="btn btn-default btn-sm" ng-model="boxSizingModel" btn-radio="false" ng-class="{'btn-success' : !boxSizingModel}">Box Sizing Off</button>
                 </div>
-                <div ng-if="boxSizingModel">
+                <div class="bm-list" ng-if="boxSizingModel">
                     <ul>
                         <li>List of box sizing true</li>
+                        <li></li>
                     </ul>
                 </div>
-                <div ng-if="!boxSizingModel">
+                <div class="bm-list" ng-if="!boxSizingModel">
                     <ul>
-                        <li>List of box sizing false</li>
+                        <li>Entire(?) Element Size</li>
+                        <ul>
+                            <li>Outter width: </li>
+                            <li>Outter height: </li>
+                        </ul>
                     </ul>
                 </div>
             </div>

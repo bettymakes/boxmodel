@@ -36,6 +36,7 @@ app.controller('BoxmodelCtrl', function($scope){
         };
     };
 
+    $scope.boxSizingModel = false;
     $scope.popUp = {state: false};
 
     $scope.toggleState = function(obj){

@@ -173,7 +173,25 @@
             <span class="fa fa-search" ></span>
         </div>
         <div class="bm-info" ng-class="{'slide-out' : popUp.state}">
-            <div class="bm-info-header"></div>
+            <div class="bm-info-header">
+                <h3>More Info</h3>
+            </div>
+            <div class="bm-info-body">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-sm" ng-model="boxSizingModel" btn-radio="true" ng-class="{'btn-success' : boxSizingModel}">Box Sizing On</button>
+                    <button type="button" class="btn btn-default btn-sm" ng-model="boxSizingModel" btn-radio="false" ng-class="{'btn-success' : !boxSizingModel}">Box Sizing Off</button>
+                </div>
+                <div ng-if="boxSizingModel">
+                    <ul>
+                        <li>List of box sizing true</li>
+                    </ul>
+                </div>
+                <div ng-if="!boxSizingModel">
+                    <ul>
+                        <li>List of box sizing false</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
 

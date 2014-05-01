@@ -194,6 +194,17 @@ html, body{
     width: 100%;
 }
 
+.bm-info-header h3{
+    margin: 0 auto;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 24px;
+    padding-top: 8px;
+    font-weight: normal;
+}
 
+.bm-info-body{
+    padding: 15px;
+}
 
 

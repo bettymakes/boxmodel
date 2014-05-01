@@ -194,6 +194,18 @@
                             <li>Outter width: </li>
                             <li>Outter height: </li>
                         </ul>
+                        <li>
+                                    Element:
+                                    {{ prop.elementWidth ? prop.elementWidth + 'px' : "400px"}}
+                                    x
+                                    {{ prop.elementHeight ? prop.elementHeight + 'px' : "200px"}}
+                                    <br>
+                                    Padding:
+                                    Top: {{ prop.paddingTop ? prop.paddingTop + 'px' : "20px"}},
+                                    Right: {{ prop.paddingRight ? prop.paddingRight + 'px' : "20px"}},
+                                    Bottom: {{ prop.paddingBottom ? prop.paddingBottom + 'px' : "20px"}},
+                                    Left: {{ prop.paddingLeft ? prop.paddingLeft + 'px' : "20px"}}
+                        </li>
                     </ul>
                 </div>
             </div>

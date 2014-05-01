@@ -16,6 +16,25 @@ html, body{
     background-color: #ccc;
 }
 
+.sidebar .form-group{
+    margin-bottom: 0;
+}
+
+.sidebar .form-horizontal{
+    border-bottom: 1px solid #fff;
+    padding: 15px 0;
+}
+
+.sidebar .btn-bar{
+    margin-top: 15px;
+}
+
+.sidebar .setting-title{
+    text-transform: uppercase;
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+
 .logo-bar{
     height: 75px;
     background-color: #000;
@@ -32,6 +51,27 @@ html, body{
 .logo-bar .fa{
     color: #F27935;
     margin-right: 5px;
+}
+
+.settings-block{
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+.element-highlight{
+    background-color: #FFFFFF;
+}
+
+.padding-highlight{
+    background-color: #FFECD4;
+}
+
+.border-highlight{
+    background-color: #B8DEC7;
+}
+
+.margin-highlight{
+    background-color: #B3C6D4;
 }
 
 /*Main body styles*/
@@ -52,27 +92,31 @@ html, body{
     vertical-align: middle;
 }
 
-.bm-margin{
-    display: inline-block;
-    padding: 20px;
-    background-color: black;
-}
-
-.bm-border{
-    display: inline-block;
-    padding: 20px;
-    background-color: blue;
-}
-
-.bm-padding{
-    display: inline-block;
-    padding: 20px;
-    background-color: green;
-}
-
 .bm-element{
     display: inline-block;
     width: 400px;
     height: 200px;
-    background-color: #F4B350;
+    background-color: #FFFFFF;
 }
+
+.bm-padding,
+.bm-border,
+.bm-margin {
+    display: inline-block;
+    padding: 20px;
+}
+
+.bm-padding{
+    background-color: #FFECD4;
+}
+
+.bm-border{
+    background-color: #B8DEC7;
+}
+
+.bm-margin{
+    background-color: #B3C6D4;
+}
+
+
+

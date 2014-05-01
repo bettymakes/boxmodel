@@ -13,11 +13,8 @@ html, body{
     bottom: 0;
     left: 0;
     width: 400px;
-    background-color: #ccc;
-    overflow: hidden;
-}
-
-.sidebar:hover{
+    background-color: #222;
+    color: #eee;
     overflow: auto;
 }
 
@@ -26,7 +23,7 @@ html, body{
 }
 
 .sidebar .form-horizontal{
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #555;
     padding: 15px 0;
 }
 
@@ -36,8 +33,14 @@ html, body{
 
 .sidebar .setting-title{
     text-transform: uppercase;
-    font-size: 1.25em;
+    font-size: 12px;
+    letter-spacing: 1px;
     margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.sidebar label{
+    color: #aaa;
 }
 
 .logo-bar{
@@ -77,19 +80,19 @@ html, body{
 }
 
 .element-highlight{
-    border-left: 25px solid #FFFFFF;
+    border-left: 20px solid #FFFFFF;
 }
 
 .padding-highlight{
-    border-left: 25px solid #FFECD4;
+    border-left: 20px solid #FFECD4;
 }
 
 .border-highlight{
-    border-left: 25px solid #B8DEC7;
+    border-left: 20px solid #B8DEC7;
 }
 
 .margin-highlight{
-    border-left: 25px solid #B3C6D4;
+    border-left: 20px solid #B3C6D4;
 }
 
 .highlight-block{
@@ -147,10 +150,9 @@ html, body{
     right: 0;
     width: 40px;
     height: 40px;
-    /*border-bottom-left-radius: 5px;*/
     background-color: #000000;
     color: #EB974E;
-    transition: all 0.5s ease;
+    z-index: 10;
 }
 
 .pop-up:hover{
@@ -163,18 +165,26 @@ html, body{
     margin-left: 12px;
 }
 
-.pop-up.slide-out{
-    right: 300px;
-}
 
 .bm-info{
-    position: absolute;
-    left: 40px;
+    position: fixed;
+    right: -300px;
     top: 0;
     height: 400px;
     width: 300px;
-    background-color: #000;
+    background-color: #f2f2f2;
     color: #fff;
+    transition: all 0.5s ease;
+}
+
+.bm-info.slide-out{
+    right: 0;
+}
+
+.bm-info-header{
+    height: 40px;
+    background-color: #000;
+    width: 100%;
 }
 
 
